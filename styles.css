@@ -39,6 +39,7 @@ header {
     min-width: 320px; /*Ancho minimo de telefonos */
     height: 334px;
     text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
 }
 
 header img {
@@ -56,3 +57,46 @@ header img {
     margin-top: 40px;
     align-self: center;
 }
+
+.header__title-container h1 { /*mas especifidad y que no hayan conflictos con frameworks*/
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: bold;
+    color: var(--just-white);
+}
+
+.header__title-container p {
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--soft-orange)
+}
+
+.header__title-container .header__button{
+    position: absolute;
+    left: calc(50% - 229px/2);
+    top: calc(100% - 48px/2);
+    display: block;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    /*sombra*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black)
+}
+
+.header__button span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('./assets/icons/down-arrow.svg');
+}
+
