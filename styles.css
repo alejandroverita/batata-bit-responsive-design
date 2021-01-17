@@ -100,6 +100,7 @@ header img {
     background-image: url('./assets/icons/down-arrow.svg');
 }
 
+/* SECTION CURRENCY CONTAINER */
 
 main {
     width: 100%;
@@ -148,4 +149,93 @@ main {
     font-weight: 500;
     line-height: 1.6rem;
     color: #757575;
+}
+
+.currency__container {
+    width: 70%;
+    min-width: 235px;
+    max-width: 500;
+    height: 360px;
+    margin: 0 auto;
+    font-family:"Inter", sans-serif;
+}
+
+.currency__container .currency__container--title{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--bitcoin-orange);
+}
+
+/*Estilos de tabla */
+
+.currency__container--table {
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.currency__container--table table{
+    width: 100%;
+    height: 100%
+}
+
+.currency__container--table td {
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--just-white);
+}
+
+.currency__container--table .table__top-left {
+    border-radius: 15px 0 0 0;
+}
+
+.currency__container--table .table__top-right {
+    border-radius: 0 15px 0 0;
+}
+
+.currency__container--table .table__bottom-left {
+    border-radius: 0 0 0 15px;
+}
+
+.currency__container--table .table__bottom-right {
+    border-radius: 0 0 15px 0;
+}
+
+.currency__container--table .table__right {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+
+/*Agregando iconos de DOWN o UP*/
+
+.currency__container--table .down {
+    display:inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url("./assets/icons/trending-down.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.currency__container--table .up {
+    display:inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url("./assets/icons/trending-up.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 }
