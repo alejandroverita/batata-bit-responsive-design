@@ -298,3 +298,51 @@ main {
     background-color: var(--soft-blue);
     border-radius: 8px;
 }
+
+/*------------------------SECCION DE BENEFICIOS-----------*/
+
+.main-product{
+    position: relative;
+    width: 100%;
+    min-width: 320px; /*No hay pantallas mas pequeñas que eso*/
+    height: auto; /*El contenido es el que ajusta la altura*/
+    padding: 20px 10px; /*Le damos estilos al contenedor principal antes que ha cada seccion*/
+    background-color: var(--warm-black);
+}
+
+/*LOGO*/
+
+.product__detail--batata-logo {
+    position: absolute; /*Asegurarnos de quien es su padre. Su padre debe ser RELATIVE*/
+    width:40px;
+    height: 25px;
+    top: calc(0% - 12.5px);
+    left: calc(50% - 20px);
+    background-image: url("./assets/icons/batata.svg");
+}
+
+
+.product__detail--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.product__detail--title h2 {
+    margin-bottom: 20px; /*Para poder separar el h2 del parrafo*/
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem; /*alto de la fuente*/
+    color: var(--just-white);
+}
+
+.product__detail--title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
