@@ -639,6 +639,21 @@ main {
     color: var(--just-white);
 }
 
+.plans-container--slider {
+    position: relative;
+}
+
+.small__right--arrow {
+    position: absolute;
+    left: 295px;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    background-image: url("./assets/icons/right-arrow.svg");
+    background-repeat: no-repeat;
+    color: #BABABA;
+}
+
 .plans-container--slider::-webkit-scrollbar {
     background-color: var(--soft-orange);
     height: 3px;
