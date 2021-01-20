@@ -466,17 +466,40 @@ main {
     color: #757575; 
 }
 
-.plans-container--card{
+.plans-container--slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.plans-container--card, 
+.basic-container--card {
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
     min-width: 230px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0;
+    margin: 50px 20px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.small__right--arrow {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    background-image: url("./assets/icons/right-arrow.svg");
+    background-repeat: no-repeat;
+    color: #BABABA;
 }
 
 .recommended{
@@ -508,7 +531,8 @@ main {
     color: black;
 }
 
-.plan__card--price span{
+.plan__card--price span,
+.ilimitado__card--price span{
     font-size: 1.2rem;
     font-weight: 300;
     vertical-align: text-top;
@@ -518,3 +542,109 @@ main {
     font-size: 1.2rem;
     color: #757575;
 }
+
+.plan__card--call {
+    width: 150px;
+    height: 48px;
+    margin-top: 28px;
+    background-color: #faf8f7;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold; 
+    line-height: 1.8rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.ilimitado__card--call {
+    width: 150px;
+    height: 48px;
+    margin-top: 28px;
+    background-color: var(--just-white);
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold; 
+    line-height: 1.8rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.plan__card--call span,
+.ilimitado__card--call span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("./assets/icons/orange-right-arrow.svg");
+    vertical-align: text-bottom;
+}
+
+.basic{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 6px;
+    top: -15px;
+    left: calc(50% - 60px);
+    font-size: 1.2rem;
+    background-color: var(--secondary-blue);
+    border-radius: 8px;
+    color: var(--just-white)
+}
+
+.ilimitado {
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 6px;
+    top: -15px;
+    left: calc(50% - 60px);
+    font-size: 1.2rem;
+    background-color: var(--grey);
+    border-radius: 8px;
+    color: var(--black);
+    font-weight: bold;
+}
+
+.ilimitado-container--card {
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px 20px 0;
+    padding: 0 15px;
+    background-color: var(--warm-black);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.ilimitado__card--title {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+
+.ilimitado__card--price {
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: var(--just-white);
+}
+
+.plans-container--slider::-webkit-scrollbar {
+    background-color: var(--soft-orange);
+    height: 3px;
+  }
+
+.plans-container--slider::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+  }
+
